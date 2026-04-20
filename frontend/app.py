@@ -48,16 +48,16 @@ st.divider()
 # Page content based on session state
 if st.session_state.page == "home":
     # Import and run home page content
-    exec(open("home.py").read())
+    exec(open("home.py", encoding="utf-8").read())
 elif st.session_state.page == "login":
     # Import and run login page content
-    exec(open("pages/streamlit_login.py").read())
+    exec(open("pages/streamlit_login.py", encoding="utf-8").read())
 elif st.session_state.page == "signup":
     # Import and run signup page content
-    exec(open("pages/signup.py").read())
+    exec(open("pages/signup.py", encoding="utf-8").read())
 elif st.session_state.page == "user_dashboard":
     # Import and run user dashboard content
-    exec(open("pages/user_dashboard.py").read())
+    exec(open("pages/user_dashboard.py", encoding="utf-8").read())
 elif st.session_state.page == "admin_dashboard":
     # Import and run admin dashboard content
-    exec(open("pages/admin_dashboard.py").read())
+    exec(open("pages/admin_dashboard.py", encoding="utf-8").read())

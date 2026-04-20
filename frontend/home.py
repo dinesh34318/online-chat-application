@@ -162,20 +162,19 @@ st.markdown(home_css, unsafe_allow_html=True)
 # Hero Section
 col1, col2 = st.columns([3, 1])
 with col2:
-    sign_up_btn, login_btn = st.columns(2)
-    with sign_up_btn:
-        if st.button("Sign Up", use_container_width=True):
-            st.switch_page("pages/signup.py")
+    # Login button only - no signup
+    login_btn = st.columns([1, 2, 1])[1]
     with login_btn:
-        if st.button("Login", use_container_width=True):
+        if st.button("🚀 Get Started", use_container_width=True, type="primary"):
             st.switch_page("pages/streamlit_login.py")
 
 st.markdown("""
 <div class="hero-content">
-    <div class="hero-title">💬 Welcome to Chat Application</div>
+    <div class="hero-title">💬 Corporate Smart Messenger</div>
     <div class="hero-subtitle">Connect, Communicate, and Collaborate Seamlessly</div>
     <div class="hero-description">
-        A modern messaging platform designed for teams and individuals
+        Experience the next generation of corporate communication with our secure,
+        intelligent messaging platform designed for modern teams.
     </div>
 </div>
 """, unsafe_allow_html=True)
@@ -190,9 +189,10 @@ with col1:
     st.markdown("""
     <div class="feature-card">
         <div class="feature-icon">🔐</div>
-        <div class="feature-title">Secure Authentication</div>
+        <div class="feature-title">🔐 Enterprise Security</div>
         <div class="feature-description">
-            Industry-standard encryption keeps your conversations private and secure.
+            Military-grade encryption and multi-factor authentication keep your 
+            corporate communications completely secure and compliant.
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -201,9 +201,10 @@ with col2:
     st.markdown("""
     <div class="feature-card">
         <div class="feature-icon">👥</div>
-        <div class="feature-title">User Management</div>
+        <div class="feature-title">👥 Smart User Management</div>
         <div class="feature-description">
-            Comprehensive admin dashboard for managing users, roles,permissions.
+            Powerful admin dashboard with role-based access control, department 
+            management, and comprehensive user analytics.
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -212,10 +213,10 @@ with col3:
     st.markdown("""
     <div class="feature-card">
         <div class="feature-icon">📱</div>
-        <div class="feature-title">Real-time Messaging</div>
+        <div class="feature-title">⚡ Instant Messaging</div>
         <div class="feature-description">
-            Instant message delivery with read receipts. 
-            Share files, images, and collaborate in real-time.
+            Lightning-fast message delivery with read receipts, file sharing, 
+            and rich media support for seamless collaboration.
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -227,10 +228,10 @@ with col4:
     st.markdown("""
     <div class="feature-card">
         <div class="feature-icon">🎨</div>
-        <div class="feature-title">Modern UI</div>
+        <div class="feature-title">🎨 Beautiful Interface</div>
         <div class="feature-description">
-            Clean, intuitive interface designed for the best user experience. 
-            Responsive design works on all devices.
+            Stunning, intuitive design that adapts perfectly to any device. 
+            Experience corporate communication like never before.
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -239,10 +240,10 @@ with col5:
     st.markdown("""
     <div class="feature-card">
         <div class="feature-icon">📊</div>
-        <div class="feature-title">Analytics Dashboard</div>
+        <div class="feature-title">📊 Advanced Analytics</div>
         <div class="feature-description">
-            Track user activity, message statistics,engagement metrics. 
-            Make data-driven decisions with comprehensive insights.
+            Real-time insights into user activity, engagement metrics, and 
+            communication patterns to drive informed business decisions.
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -251,10 +252,10 @@ with col6:
     st.markdown("""
     <div class="feature-card">
         <div class="feature-icon">🔔</div>
-        <div class="feature-title">Smart Notifications</div>
+        <div class="feature-title">🔔 Intelligent Notifications</div>
         <div class="feature-description">
-            Stay updated with customizable notifications. 
-            Never miss an important message with intelligent alerts.
+            Smart, customizable alerts that learn your preferences. 
+            Stay connected without being overwhelmed by unnecessary noise.
         </div>
     </div>
     """, unsafe_allow_html=True)
