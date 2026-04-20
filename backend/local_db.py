@@ -101,7 +101,7 @@ class LocalConversationsCollection:
 # Message management
 def get_messages_collection():
     return LocalMessagesCollection()
-
+#LocalMessageCollection Management
 class LocalMessagesCollection:
     def find(self, query=None, sort=None, limit=None):
         messages = load_json_file(MESSAGES_FILE)
