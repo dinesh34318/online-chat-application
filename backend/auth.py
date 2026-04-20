@@ -115,7 +115,7 @@ def register_user(first_name, last_name, department_code, role_code):
     users.insert_one(user_data)
     
     return True, "User registered successfully!", login_id, initial_password
-
+# defining login_user
 def login_user(login_id, password):
     if not login_id.strip():
         return False, "Login ID is required.", None
