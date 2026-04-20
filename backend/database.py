@@ -4,7 +4,7 @@ from pymongo.errors import OperationFailure, ServerSelectionTimeoutError
 from dotenv import load_dotenv
 from datetime import datetime, timezone
 import uuid
-
+#function call to the .env file
 load_dotenv()
 
 _client = None
